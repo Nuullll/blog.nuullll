@@ -1,0 +1,689 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'f:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'f:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'hexo-math',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of g:\projects\blog.nuullll\package.json
+5 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo\package.json
+6 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-generator-archive\package.json
+7 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-generator-category\package.json
+8 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-generator-index\package.json
+9 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-generator-tag\package.json
+10 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-renderer-ejs\package.json
+11 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-renderer-marked\package.json
+12 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-renderer-stylus\package.json
+13 verbose installManyTop reading scoped package data from g:\projects\blog.nuullll\node_modules\hexo-server\package.json
+14 verbose readDependencies loading dependencies from g:\projects\blog.nuullll\package.json
+15 silly cache add args [ 'hexo-math', null ]
+16 verbose cache add spec hexo-math
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: 'hexo-math',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'hexo-math',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: 'latest',
+17 silly cache add   type: 'tag' }
+18 silly addNamed hexo-math@latest
+19 verbose addNamed "latest" is being treated as a dist-tag for hexo-math
+20 info addNameTag [ 'hexo-math', 'latest' ]
+21 silly mapToRegistry name hexo-math
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'hexo-math',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   name: 'hexo-math',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/hexo-math
+26 verbose addNameTag registry:https://registry.npmjs.org/hexo-math not in flight; fetching
+27 verbose request uri https://registry.npmjs.org/hexo-math
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 10:52:33
+30 verbose request id 88313ead0e57da33
+31 http request GET https://registry.npmjs.org/hexo-math
+32 http 200 https://registry.npmjs.org/hexo-math
+33 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 verbose headers   etag: '"44AH7FEDHY9QGTY941BH2PRUK"',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'content-encoding': 'gzip',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '6249',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Thu, 11 Aug 2016 02:52:51 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1470883971.705271,VS0,VE187',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 200,
+34 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+34 silly get     etag: '"44AH7FEDHY9QGTY941BH2PRUK"',
+34 silly get     'content-type': 'application/json',
+34 silly get     'content-encoding': 'gzip',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     'content-length': '6249',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Thu, 11 Aug 2016 02:52:51 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-lcy1132-LCY',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1470883971.705271,VS0,VE187',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 verbose get saving hexo-math to C:\Users\Nuullll\AppData\Roaming\npm-cache\registry.npmjs.org\hexo-math\.cache.json
+36 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+37 silly addNameTag next cb for hexo-math with tag latest
+38 silly addNamed hexo-math@3.0.2
+39 verbose addNamed "3.0.2" is a plain semver version for hexo-math
+40 silly mapToRegistry name hexo-math
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry data Result {
+43 silly mapToRegistry   raw: 'hexo-math',
+43 silly mapToRegistry   scope: null,
+43 silly mapToRegistry   name: 'hexo-math',
+43 silly mapToRegistry   rawSpec: '',
+43 silly mapToRegistry   spec: 'latest',
+43 silly mapToRegistry   type: 'tag' }
+44 silly mapToRegistry uri https://registry.npmjs.org/hexo-math
+45 verbose addRemoteTarball https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz',
+46 verbose addRemoteTarball   'e6c9af7f5fecda33894d57e0edb5d22f9058e430' ]
+47 info retry fetch attempt 1 at 10:52:50
+48 info attempt registry request try #1 at 10:52:50
+49 http fetch GET https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz
+50 http fetch 200 https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz
+51 silly fetchAndShaCheck shasum e6c9af7f5fecda33894d57e0edb5d22f9058e430
+52 verbose addTmpTarball C:\Users\Nuullll\AppData\Local\Temp\npm-2020-ec2cb448\registry.npmjs.org\hexo-math\-\hexo-math-3.0.2.tgz not in flight; adding
+53 verbose addTmpTarball already have metadata; skipping unpack for hexo-math@3.0.2
+54 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+55 silly cache afterAdd hexo-math@3.0.2
+56 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\hexo-math\3.0.2\package\package.json not in flight; writing
+57 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\hexo-math\3.0.2\package\package.json written
+59 silly install resolved [ { name: 'hexo-math',
+59 silly install resolved     version: '3.0.2',
+59 silly install resolved     description: 'Add math support to hexo',
+59 silly install resolved     main: 'lib/index.js',
+59 silly install resolved     repository:
+59 silly install resolved      { type: 'git',
+59 silly install resolved        url: 'git+https://github.com/akfish/hexo-math.git' },
+59 silly install resolved     scripts:
+59 silly install resolved      { prepublish: 'gulp clean && gulp es6',
+59 silly install resolved        pretest: 'gulp clean:test && gulp asset:test',
+59 silly install resolved        postinstall: 'cd ../.. && npm install --save hexo-inject',
+59 silly install resolved        test: 'gulp test --debug' },
+59 silly install resolved     keywords: [ 'website', 'blog', 'cms', 'framework', 'hexo', 'mathjax' ],
+59 silly install resolved     author:
+59 silly install resolved      { name: 'AKFish',
+59 silly install resolved        email: 'akfish@gmail.com',
+59 silly install resolved        url: 'http://catx.me' },
+59 silly install resolved     license: 'MIT',
+59 silly install resolved     dependencies:
+59 silly install resolved      { 'html-entities': '^1.1.3',
+59 silly install resolved        katex: '^0.6.0',
+59 silly install resolved        underscore: '^1.8.3' },
+59 silly install resolved     devDependencies:
+59 silly install resolved      { 'babel-plugin-add-module-exports': '^0.1.2',
+59 silly install resolved        'babel-preset-es2015': '^6.5.0',
+59 silly install resolved        'babel-register': '^6.5.2',
+59 silly install resolved        chai: '^3.5.0',
+59 silly install resolved        'chai-as-promised': '^5.2.0',
+59 silly install resolved        'coffee-script': '^1.10.0',
+59 silly install resolved        del: '^2.2.0',
+59 silly install resolved        gulp: '^3.9.1',
+59 silly install resolved        'gulp-babel': '^6.1.2',
+59 silly install resolved        'gulp-heap': '^2.0.0-alpha.1',
+59 silly install resolved        'gulp-mocha': '^2.2.0',
+59 silly install resolved        hexo: '^3.1.1',
+59 silly install resolved        'hexo-fs': '^0.1.5',
+59 silly install resolved        'hexo-util': '^0.5.3',
+59 silly install resolved        mocha: '^2.2.5',
+59 silly install resolved        underscore: '^1.8.3' },
+59 silly install resolved     gitHead: '8feff20adb276cc21cf2d8868fa38a92bfbb6d46',
+59 silly install resolved     bugs: { url: 'https://github.com/akfish/hexo-math/issues' },
+59 silly install resolved     homepage: 'https://github.com/akfish/hexo-math#readme',
+59 silly install resolved     _id: 'hexo-math@3.0.2',
+59 silly install resolved     _shasum: 'e6c9af7f5fecda33894d57e0edb5d22f9058e430',
+59 silly install resolved     _from: 'hexo-math@latest',
+59 silly install resolved     _npmVersion: '3.3.12',
+59 silly install resolved     _nodeVersion: '5.2.0',
+59 silly install resolved     _npmUser: { name: 'akfish', email: 'akfish@gmail.com' },
+59 silly install resolved     dist:
+59 silly install resolved      { shasum: 'e6c9af7f5fecda33894d57e0edb5d22f9058e430',
+59 silly install resolved        tarball: 'https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz' },
+59 silly install resolved     maintainers: [ [Object] ],
+59 silly install resolved     _npmOperationalInternal:
+59 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+59 silly install resolved        tmp: 'tmp/hexo-math-3.0.2.tgz_1470185408607_0.13006129348650575' },
+59 silly install resolved     directories: {},
+59 silly install resolved     _resolved: 'https://registry.npmjs.org/hexo-math/-/hexo-math-3.0.2.tgz' } ]
+60 info install hexo-math@3.0.2 into g:\projects\blog.nuullll
+61 info installOne hexo-math@3.0.2
+62 verbose installOne of hexo-math to g:\projects\blog.nuullll not in flight; installing
+63 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+64 verbose lock using C:\Users\Nuullll\AppData\Roaming\npm-cache\_locks\hexo-math-6d96599f9b3531c6.lock for g:\projects\blog.nuullll\node_modules\hexo-math
+65 silly install write writing hexo-math 3.0.2 to g:\projects\blog.nuullll\node_modules\hexo-math
+66 verbose unbuild node_modules\hexo-math
+67 silly gentlyRm g:\projects\blog.nuullll\node_modules\hexo-math is being purged from base g:\projects\blog.nuullll
+68 verbose gentlyRm don't care about contents; nuking g:\projects\blog.nuullll\node_modules\hexo-math
+69 verbose tar unpack C:\Users\Nuullll\AppData\Roaming\npm-cache\hexo-math\3.0.2\package.tgz
+70 verbose tar unpacking to g:\projects\blog.nuullll\node_modules\hexo-math
+71 silly gentlyRm g:\projects\blog.nuullll\node_modules\hexo-math is being purged
+72 verbose gentlyRm don't care about contents; nuking g:\projects\blog.nuullll\node_modules\hexo-math
+73 silly gunzTarPerm modes [ '777', '666' ]
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm extractEntry .npmignore
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry gulpconfig.json
+78 silly gunzTarPerm extractEntry .babelrc
+79 silly gunzTarPerm extractEntry asset/inject.swig
+80 silly gunzTarPerm extractEntry gulp-task/clean.coffee
+81 silly gunzTarPerm extractEntry gulp-task/cli.coffee
+82 silly gunzTarPerm extractEntry gulp-task/es6.coffee
+83 silly gunzTarPerm extractEntry gulp-task/mocha.coffee
+84 silly gunzTarPerm extractEntry gulp-task/test-asset.coffee
+85 silly gunzTarPerm extractEntry gulp-task/watch.coffee
+86 silly gunzTarPerm extractEntry gulpfile.coffee
+87 silly gunzTarPerm extractEntry lib/consts.js
+88 silly gunzTarPerm extractEntry lib/index.js
+89 silly gunzTarPerm extractEntry lib/main.js
+90 silly gunzTarPerm extractEntry lib/option.js
+91 silly gunzTarPerm extractEntry lib/filter/inject.js
+92 silly gunzTarPerm extractEntry lib/filter/post.js
+93 silly gunzTarPerm extractEntry lib/tag/math.js
+94 silly gunzTarPerm extractEntry src/consts.es6
+95 silly gunzTarPerm extractEntry src/filter/inject.es6
+96 silly gunzTarPerm extractEntry src/filter/post.es6
+97 silly gunzTarPerm extractEntry src/index.es6
+98 silly gunzTarPerm extractEntry src/main.es6
+99 silly gunzTarPerm extractEntry src/option.es6
+100 silly gunzTarPerm extractEntry src/tag/math.es6
+101 silly gunzTarPerm extractEntry .travis.yml
+102 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/block.md.skip
+103 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/hello-world.md.expected
+104 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/inline.md.skip
+105 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/tag-escape.md.expected
+106 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/tag-in-list.md.expected
+107 silly gunzTarPerm extractEntry test/asset/source/_expected/katex/tag.md.expected
+108 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/block.md.expected
+109 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/hello-world.md.expected
+110 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/inline.md.expected
+111 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/tag-escape.md.expected
+112 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/tag-in-list.md.expected
+113 silly gunzTarPerm extractEntry test/asset/source/_expected/mathjax/tag.md.expected
+114 silly gunzTarPerm extractEntry test/asset/source/_posts/block.md
+115 silly gunzTarPerm extractEntry test/asset/source/_posts/hello-world.md
+116 silly gunzTarPerm extractEntry test/asset/source/_posts/inline.md
+117 silly gunzTarPerm extractEntry test/asset/source/_posts/tag-escape.md
+118 silly gunzTarPerm extractEntry test/asset/source/_posts/tag-in-list.md
+119 silly gunzTarPerm extractEntry test/asset/source/_posts/tag.md
+120 silly gunzTarPerm extractEntry test/katex.spec.coffee
+121 silly gunzTarPerm extractEntry test/mathjax.spec.coffee
+122 silly gunzTarPerm extractEntry test/scaffolds.coffee
+123 silly gunzTarPerm extractEntry test/site/package.json
+124 silly gunzTarPerm extractEntry test/site/_config.yml
+125 silly gunzTarPerm extractEntry test/site/scaffolds/draft.md
+126 silly gunzTarPerm extractEntry test/site/scaffolds/page.md
+127 silly gunzTarPerm extractEntry test/site/scaffolds/post.md
+128 silly gunzTarPerm extractEntry test/site/source/_expected/katex/block.md.skip
+129 silly gunzTarPerm extractEntry test/site/source/_expected/katex/hello-world.md.expected
+130 silly gunzTarPerm extractEntry test/site/source/_expected/katex/inline.md.skip
+131 silly gunzTarPerm extractEntry test/site/source/_expected/katex/tag-escape.md.expected
+132 silly gunzTarPerm extractEntry test/site/source/_expected/katex/tag-in-list.md.expected
+133 silly gunzTarPerm extractEntry test/site/source/_expected/katex/tag.md.expected
+134 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/block.md.expected
+135 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/hello-world.md.expected
+136 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/inline.md.expected
+137 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/tag-escape.md.expected
+138 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/tag-in-list.md.expected
+139 silly gunzTarPerm extractEntry test/site/source/_expected/mathjax/tag.md.expected
+140 silly gunzTarPerm extractEntry test/site/source/_posts/tag-escape.md
+141 silly gunzTarPerm extractEntry test/site/source/_posts/block.md
+142 silly gunzTarPerm extractEntry test/site/source/_posts/hello-world.md
+143 silly gunzTarPerm extractEntry test/site/source/_posts/hello-world.md.expected
+144 silly gunzTarPerm extractEntry test/site/source/_posts/inline.md
+145 silly gunzTarPerm extractEntry test/site/source/_posts/inline.md.expected
+146 silly gunzTarPerm extractEntry test/site/source/_posts/block.md.expected
+147 silly gunzTarPerm extractEntry test/site/source/_posts/tag-escape.md.expected
+148 silly gunzTarPerm extractEntry test/site/source/_posts/tag-in-list.md
+149 silly gunzTarPerm extractEntry test/site/source/_posts/tag-in-list.md.expected
+150 silly gunzTarPerm extractEntry test/site/source/_posts/tag.md
+151 silly gunzTarPerm extractEntry test/site/source/_posts/tag.md.expected
+152 silly gunzTarPerm extractEntry test/site/themes/landscape/package.json
+153 silly gunzTarPerm extractEntry test/site/themes/landscape/README.md
+154 silly gunzTarPerm extractEntry test/site/themes/landscape/LICENSE
+155 silly gunzTarPerm extractEntry test/site/themes/landscape/Gruntfile.js
+156 silly gunzTarPerm extractEntry test/site/themes/landscape/_config.yml
+157 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/default.yml
+158 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/fr.yml
+159 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/nl.yml
+160 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/no.yml
+161 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/ru.yml
+162 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/zh-CN.yml
+163 silly gunzTarPerm extractEntry test/site/themes/landscape/languages/zh-TW.yml
+164 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/google-analytics.ejs
+165 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/after-footer.ejs
+166 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/archive.ejs
+167 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/article.ejs
+168 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/footer.ejs
+169 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/archive-post.ejs
+170 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/head.ejs
+171 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/header.ejs
+172 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/mobile-nav.ejs
+173 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/category.ejs
+174 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/date.ejs
+175 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/gallery.ejs
+176 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/nav.ejs
+177 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/tag.ejs
+178 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/post/title.ejs
+179 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_partial/sidebar.ejs
+180 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_widget/archive.ejs
+181 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_widget/category.ejs
+182 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_widget/recent_posts.ejs
+183 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_widget/tag.ejs
+184 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/_widget/tagcloud.ejs
+185 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/archive.ejs
+186 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/category.ejs
+187 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/index.ejs
+188 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/layout.ejs
+189 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/page.ejs
+190 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/post.ejs
+191 silly gunzTarPerm extractEntry test/site/themes/landscape/layout/tag.ejs
+192 silly gunzTarPerm extractEntry test/site/themes/landscape/scripts/fancybox.js
+193 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_extend.styl
+194 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/archive.styl
+195 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/article.styl
+196 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/comment.styl
+197 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/footer.styl
+198 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/header.styl
+199 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/highlight.styl
+200 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/mobile.styl
+201 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/sidebar-aside.styl
+202 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/sidebar-bottom.styl
+203 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_partial/sidebar.styl
+204 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_util/grid.styl
+205 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_util/mixin.styl
+206 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/_variables.styl
+207 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/fonts/FontAwesome.otf
+208 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/fonts/fontawesome-webfont.eot
+209 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/fonts/fontawesome-webfont.svg
+210 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/fonts/fontawesome-webfont.ttf
+211 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/fonts/fontawesome-webfont.woff
+212 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/images/banner.jpg
+213 silly gunzTarPerm extractEntry test/site/themes/landscape/source/css/style.styl
+214 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/jquery.fancybox.js
+215 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/jquery.fancybox.pack.js
+216 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/blank.gif
+217 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/fancybox_loading.gif
+218 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/fancybox_loading@2x.gif
+219 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/fancybox_overlay.png
+220 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/fancybox_sprite.png
+221 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/fancybox_sprite@2x.png
+222 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.js
+223 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/jquery.fancybox-media.js
+224 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.js
+225 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/fancybox_buttons.png
+226 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.css
+227 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.css
+228 silly gunzTarPerm extractEntry test/site/themes/landscape/source/fancybox/jquery.fancybox.css
+229 silly gunzTarPerm extractEntry test/site/themes/landscape/source/js/script.js
+230 silly gunzTarPerm extractEntry test/util.coffee
+231 verbose write writing to g:\projects\blog.nuullll\node_modules\hexo-math\package.json
+232 info preinstall hexo-math@3.0.2
+233 verbose readDependencies loading dependencies from g:\projects\blog.nuullll\node_modules\hexo-math\package.json
+234 silly prepareForInstallMany adding html-entities@^1.1.3 from hexo-math dependencies
+235 silly prepareForInstallMany adding katex@^0.6.0 from hexo-math dependencies
+236 silly prepareForInstallMany adding underscore@^1.8.3 from hexo-math dependencies
+237 verbose readDependencies loading dependencies from g:\projects\blog.nuullll\node_modules\hexo-math\package.json
+238 silly cache add args [ 'katex@^0.6.0', null ]
+239 verbose cache add spec katex@^0.6.0
+240 silly cache add parsed spec Result {
+240 silly cache add   raw: 'katex@^0.6.0',
+240 silly cache add   scope: null,
+240 silly cache add   name: 'katex',
+240 silly cache add   rawSpec: '^0.6.0',
+240 silly cache add   spec: '>=0.6.0 <0.7.0',
+240 silly cache add   type: 'range' }
+241 silly addNamed katex@>=0.6.0 <0.7.0
+242 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for katex
+243 silly addNameRange { name: 'katex', range: '>=0.6.0 <0.7.0', hasData: false }
+244 silly mapToRegistry name katex
+245 silly mapToRegistry using default registry
+246 silly mapToRegistry registry https://registry.npmjs.org/
+247 silly mapToRegistry data Result {
+247 silly mapToRegistry   raw: 'katex',
+247 silly mapToRegistry   scope: null,
+247 silly mapToRegistry   name: 'katex',
+247 silly mapToRegistry   rawSpec: '',
+247 silly mapToRegistry   spec: 'latest',
+247 silly mapToRegistry   type: 'tag' }
+248 silly mapToRegistry uri https://registry.npmjs.org/katex
+249 verbose addNameRange registry:https://registry.npmjs.org/katex not in flight; fetching
+250 silly cache add args [ 'underscore@^1.8.3', null ]
+251 verbose cache add spec underscore@^1.8.3
+252 silly cache add parsed spec Result {
+252 silly cache add   raw: 'underscore@^1.8.3',
+252 silly cache add   scope: null,
+252 silly cache add   name: 'underscore',
+252 silly cache add   rawSpec: '^1.8.3',
+252 silly cache add   spec: '>=1.8.3 <2.0.0',
+252 silly cache add   type: 'range' }
+253 silly addNamed underscore@>=1.8.3 <2.0.0
+254 verbose addNamed ">=1.8.3 <2.0.0" is a valid semver range for underscore
+255 silly addNameRange { name: 'underscore', range: '>=1.8.3 <2.0.0', hasData: false }
+256 silly mapToRegistry name underscore
+257 silly mapToRegistry using default registry
+258 silly mapToRegistry registry https://registry.npmjs.org/
+259 silly mapToRegistry data Result {
+259 silly mapToRegistry   raw: 'underscore',
+259 silly mapToRegistry   scope: null,
+259 silly mapToRegistry   name: 'underscore',
+259 silly mapToRegistry   rawSpec: '',
+259 silly mapToRegistry   spec: 'latest',
+259 silly mapToRegistry   type: 'tag' }
+260 silly mapToRegistry uri https://registry.npmjs.org/underscore
+261 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+262 silly cache add args [ 'html-entities@^1.1.3', null ]
+263 verbose cache add spec html-entities@^1.1.3
+264 silly cache add parsed spec Result {
+264 silly cache add   raw: 'html-entities@^1.1.3',
+264 silly cache add   scope: null,
+264 silly cache add   name: 'html-entities',
+264 silly cache add   rawSpec: '^1.1.3',
+264 silly cache add   spec: '>=1.1.3 <2.0.0',
+264 silly cache add   type: 'range' }
+265 silly addNamed html-entities@>=1.1.3 <2.0.0
+266 verbose addNamed ">=1.1.3 <2.0.0" is a valid semver range for html-entities
+267 silly addNameRange { name: 'html-entities',
+267 silly addNameRange   range: '>=1.1.3 <2.0.0',
+267 silly addNameRange   hasData: false }
+268 silly mapToRegistry name html-entities
+269 silly mapToRegistry using default registry
+270 silly mapToRegistry registry https://registry.npmjs.org/
+271 silly mapToRegistry data Result {
+271 silly mapToRegistry   raw: 'html-entities',
+271 silly mapToRegistry   scope: null,
+271 silly mapToRegistry   name: 'html-entities',
+271 silly mapToRegistry   rawSpec: '',
+271 silly mapToRegistry   spec: 'latest',
+271 silly mapToRegistry   type: 'tag' }
+272 silly mapToRegistry uri https://registry.npmjs.org/html-entities
+273 verbose addNameRange registry:https://registry.npmjs.org/html-entities not in flight; fetching
+274 verbose request uri https://registry.npmjs.org/katex
+275 verbose request no auth needed
+276 info attempt registry request try #1 at 10:54:33
+277 http request GET https://registry.npmjs.org/katex
+278 verbose request uri https://registry.npmjs.org/underscore
+279 verbose request no auth needed
+280 info attempt registry request try #1 at 10:54:33
+281 http request GET https://registry.npmjs.org/underscore
+282 verbose request uri https://registry.npmjs.org/html-entities
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 10:54:33
+285 verbose etag "84NJ8ICEA96BI9IUBS21UM1NP"
+286 http request GET https://registry.npmjs.org/html-entities
+287 http 200 https://registry.npmjs.org/katex
+288 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+288 verbose headers   etag: '"92R6XXJX1JZETZOYGZOJ1TSJO"',
+288 verbose headers   'content-type': 'application/json',
+288 verbose headers   'content-encoding': 'gzip',
+288 verbose headers   'cache-control': 'max-age=300',
+288 verbose headers   'content-length': '4037',
+288 verbose headers   'accept-ranges': 'bytes',
+288 verbose headers   date: 'Thu, 11 Aug 2016 02:54:36 GMT',
+288 verbose headers   via: '1.1 varnish',
+288 verbose headers   age: '0',
+288 verbose headers   connection: 'keep-alive',
+288 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+288 verbose headers   'x-cache': 'MISS',
+288 verbose headers   'x-cache-hits': '0',
+288 verbose headers   'x-timer': 'S1470884076.155606,VS0,VE177',
+288 verbose headers   vary: 'Accept-Encoding' }
+289 silly get cb [ 200,
+289 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+289 silly get     etag: '"92R6XXJX1JZETZOYGZOJ1TSJO"',
+289 silly get     'content-type': 'application/json',
+289 silly get     'content-encoding': 'gzip',
+289 silly get     'cache-control': 'max-age=300',
+289 silly get     'content-length': '4037',
+289 silly get     'accept-ranges': 'bytes',
+289 silly get     date: 'Thu, 11 Aug 2016 02:54:36 GMT',
+289 silly get     via: '1.1 varnish',
+289 silly get     age: '0',
+289 silly get     connection: 'keep-alive',
+289 silly get     'x-served-by': 'cache-lcy1132-LCY',
+289 silly get     'x-cache': 'MISS',
+289 silly get     'x-cache-hits': '0',
+289 silly get     'x-timer': 'S1470884076.155606,VS0,VE177',
+289 silly get     vary: 'Accept-Encoding' } ]
+290 verbose get saving katex to C:\Users\Nuullll\AppData\Roaming\npm-cache\registry.npmjs.org\katex\.cache.json
+291 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+292 silly addNameRange number 2 { name: 'katex', range: '>=0.6.0 <0.7.0', hasData: true }
+293 silly addNameRange versions [ 'katex',
+293 silly addNameRange   [ '0.1.0',
+293 silly addNameRange     '0.1.1',
+293 silly addNameRange     '0.2.0',
+293 silly addNameRange     '0.3.0',
+293 silly addNameRange     '0.4.0',
+293 silly addNameRange     '0.4.3',
+293 silly addNameRange     '0.5.0',
+293 silly addNameRange     '0.5.1',
+293 silly addNameRange     '0.6.0' ] ]
+294 silly addNamed katex@0.6.0
+295 verbose addNamed "0.6.0" is a plain semver version for katex
+296 silly mapToRegistry name katex
+297 silly mapToRegistry using default registry
+298 silly mapToRegistry registry https://registry.npmjs.org/
+299 silly mapToRegistry data Result {
+299 silly mapToRegistry   raw: 'katex',
+299 silly mapToRegistry   scope: null,
+299 silly mapToRegistry   name: 'katex',
+299 silly mapToRegistry   rawSpec: '',
+299 silly mapToRegistry   spec: 'latest',
+299 silly mapToRegistry   type: 'tag' }
+300 silly mapToRegistry uri https://registry.npmjs.org/katex
+301 verbose addRemoteTarball https://registry.npmjs.org/katex/-/katex-0.6.0.tgz not in flight; adding
+302 verbose addRemoteTarball [ 'https://registry.npmjs.org/katex/-/katex-0.6.0.tgz',
+302 verbose addRemoteTarball   '12418e09121c05c92041b6b3b9fb6bab213cb6f3' ]
+303 info retry fetch attempt 1 at 10:54:35
+304 info attempt registry request try #1 at 10:54:35
+305 http fetch GET https://registry.npmjs.org/katex/-/katex-0.6.0.tgz
+306 http fetch 200 https://registry.npmjs.org/katex/-/katex-0.6.0.tgz
+307 http 304 https://registry.npmjs.org/html-entities
+308 verbose headers { date: 'Thu, 11 Aug 2016 02:54:38 GMT',
+308 verbose headers   via: '1.1 varnish',
+308 verbose headers   'cache-control': 'max-age=300',
+308 verbose headers   etag: '"84NJ8ICEA96BI9IUBS21UM1NP"',
+308 verbose headers   age: '23',
+308 verbose headers   connection: 'keep-alive',
+308 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+308 verbose headers   'x-cache': 'HIT',
+308 verbose headers   'x-cache-hits': '1',
+308 verbose headers   'x-timer': 'S1470884078.518563,VS0,VE0',
+308 verbose headers   vary: 'Accept-Encoding' }
+309 silly get cb [ 304,
+309 silly get   { date: 'Thu, 11 Aug 2016 02:54:38 GMT',
+309 silly get     via: '1.1 varnish',
+309 silly get     'cache-control': 'max-age=300',
+309 silly get     etag: '"84NJ8ICEA96BI9IUBS21UM1NP"',
+309 silly get     age: '23',
+309 silly get     connection: 'keep-alive',
+309 silly get     'x-served-by': 'cache-lcy1130-LCY',
+309 silly get     'x-cache': 'HIT',
+309 silly get     'x-cache-hits': '1',
+309 silly get     'x-timer': 'S1470884078.518563,VS0,VE0',
+309 silly get     vary: 'Accept-Encoding' } ]
+310 verbose etag https://registry.npmjs.org/html-entities from cache
+311 verbose get saving html-entities to C:\Users\Nuullll\AppData\Roaming\npm-cache\registry.npmjs.org\html-entities\.cache.json
+312 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+313 silly addNameRange number 2 { name: 'html-entities', range: '>=1.1.3 <2.0.0', hasData: true }
+314 silly addNameRange versions [ 'html-entities',
+314 silly addNameRange   [ '1.0.0',
+314 silly addNameRange     '1.0.1',
+314 silly addNameRange     '1.0.2',
+314 silly addNameRange     '1.0.3',
+314 silly addNameRange     '1.0.4',
+314 silly addNameRange     '1.0.5',
+314 silly addNameRange     '1.0.6',
+314 silly addNameRange     '1.0.7',
+314 silly addNameRange     '1.0.8',
+314 silly addNameRange     '1.0.9',
+314 silly addNameRange     '1.0.10',
+314 silly addNameRange     '1.1.0',
+314 silly addNameRange     '1.1.1',
+314 silly addNameRange     '1.1.2',
+314 silly addNameRange     '1.1.3',
+314 silly addNameRange     '1.2.0' ] ]
+315 silly addNamed html-entities@1.2.0
+316 verbose addNamed "1.2.0" is a plain semver version for html-entities
+317 silly cache afterAdd html-entities@1.2.0
+318 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\html-entities\1.2.0\package\package.json not in flight; writing
+319 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+320 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\html-entities\1.2.0\package\package.json written
+321 http 200 https://registry.npmjs.org/underscore
+322 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+322 verbose headers   etag: '"ES7QZZ7FUK1TDNKELXY3AXB7G"',
+322 verbose headers   'content-type': 'application/json',
+322 verbose headers   'content-encoding': 'gzip',
+322 verbose headers   'cache-control': 'max-age=300',
+322 verbose headers   'content-length': '7875',
+322 verbose headers   'accept-ranges': 'bytes',
+322 verbose headers   date: 'Thu, 11 Aug 2016 02:54:44 GMT',
+322 verbose headers   via: '1.1 varnish',
+322 verbose headers   age: '193',
+322 verbose headers   connection: 'keep-alive',
+322 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+322 verbose headers   'x-cache': 'HIT',
+322 verbose headers   'x-cache-hits': '7',
+322 verbose headers   'x-timer': 'S1470884084.310455,VS0,VE0',
+322 verbose headers   vary: 'Accept-Encoding' }
+323 silly get cb [ 200,
+323 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+323 silly get     etag: '"ES7QZZ7FUK1TDNKELXY3AXB7G"',
+323 silly get     'content-type': 'application/json',
+323 silly get     'content-encoding': 'gzip',
+323 silly get     'cache-control': 'max-age=300',
+323 silly get     'content-length': '7875',
+323 silly get     'accept-ranges': 'bytes',
+323 silly get     date: 'Thu, 11 Aug 2016 02:54:44 GMT',
+323 silly get     via: '1.1 varnish',
+323 silly get     age: '193',
+323 silly get     connection: 'keep-alive',
+323 silly get     'x-served-by': 'cache-lcy1128-LCY',
+323 silly get     'x-cache': 'HIT',
+323 silly get     'x-cache-hits': '7',
+323 silly get     'x-timer': 'S1470884084.310455,VS0,VE0',
+323 silly get     vary: 'Accept-Encoding' } ]
+324 verbose get saving underscore to C:\Users\Nuullll\AppData\Roaming\npm-cache\registry.npmjs.org\underscore\.cache.json
+325 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+326 silly addNameRange number 2 { name: 'underscore', range: '>=1.8.3 <2.0.0', hasData: true }
+327 silly addNameRange versions [ 'underscore',
+327 silly addNameRange   [ '1.0.3',
+327 silly addNameRange     '1.0.4',
+327 silly addNameRange     '1.1.0',
+327 silly addNameRange     '1.1.1',
+327 silly addNameRange     '1.1.2',
+327 silly addNameRange     '1.1.3',
+327 silly addNameRange     '1.1.4',
+327 silly addNameRange     '1.1.5',
+327 silly addNameRange     '1.1.6',
+327 silly addNameRange     '1.1.7',
+327 silly addNameRange     '1.2.0',
+327 silly addNameRange     '1.2.1',
+327 silly addNameRange     '1.2.2',
+327 silly addNameRange     '1.2.3',
+327 silly addNameRange     '1.2.4',
+327 silly addNameRange     '1.3.0',
+327 silly addNameRange     '1.3.1',
+327 silly addNameRange     '1.3.2',
+327 silly addNameRange     '1.3.3',
+327 silly addNameRange     '1.4.0',
+327 silly addNameRange     '1.4.1',
+327 silly addNameRange     '1.4.2',
+327 silly addNameRange     '1.4.3',
+327 silly addNameRange     '1.4.4',
+327 silly addNameRange     '1.5.0',
+327 silly addNameRange     '1.5.1',
+327 silly addNameRange     '1.5.2',
+327 silly addNameRange     '1.6.0',
+327 silly addNameRange     '1.7.0',
+327 silly addNameRange     '1.8.0',
+327 silly addNameRange     '1.8.1',
+327 silly addNameRange     '1.8.2',
+327 silly addNameRange     '1.8.3' ] ]
+328 silly addNamed underscore@1.8.3
+329 verbose addNamed "1.8.3" is a plain semver version for underscore
+330 silly mapToRegistry name underscore
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry data Result {
+333 silly mapToRegistry   raw: 'underscore',
+333 silly mapToRegistry   scope: null,
+333 silly mapToRegistry   name: 'underscore',
+333 silly mapToRegistry   rawSpec: '',
+333 silly mapToRegistry   spec: 'latest',
+333 silly mapToRegistry   type: 'tag' }
+334 silly mapToRegistry uri https://registry.npmjs.org/underscore
+335 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz not in flight; adding
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+336 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+337 info retry fetch attempt 1 at 10:54:46
+338 info attempt registry request try #1 at 10:54:46
+339 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+340 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+341 silly fetchAndShaCheck shasum 4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022
+342 verbose addTmpTarball C:\Users\Nuullll\AppData\Local\Temp\npm-2020-ec2cb448\registry.npmjs.org\underscore\-\underscore-1.8.3.tgz not in flight; adding
+343 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.8.3
+344 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+345 silly cache afterAdd underscore@1.8.3
+346 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json not in flight; writing
+347 verbose correctMkdir C:\Users\Nuullll\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+348 verbose afterAdd C:\Users\Nuullll\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json written
+349 info retry will retry, error on last attempt: Error: read ECONNRESET
+350 info retry will retry, error on last attempt: Error: read ECONNRESET
+351 silly fetchAndShaCheck shasum 12418e09121c05c92041b6b3b9fb6bab213cb6f3
+352 verbose about to build g:\projects\blog.nuullll\node_modules\hexo-math
+353 verbose unlock done using C:\Users\Nuullll\AppData\Roaming\npm-cache\_locks\hexo-math-6d96599f9b3531c6.lock for g:\projects\blog.nuullll\node_modules\hexo-math
+354 verbose stack Error: shasum check failed for C:\Users\Nuullll\AppData\Local\Temp\npm-2020-ec2cb448\registry.npmjs.org\katex\-\katex-0.6.0.tgz
+354 verbose stack Expected: 12418e09121c05c92041b6b3b9fb6bab213cb6f3
+354 verbose stack Actual:   f17a16f7064fee15b2b8a27a28685adfca742a6a
+354 verbose stack From:     https://registry.npmjs.org/katex/-/katex-0.6.0.tgz
+354 verbose stack     at f:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+354 verbose stack     at ReadStream.<anonymous> (f:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+354 verbose stack     at emitNone (events.js:72:20)
+354 verbose stack     at ReadStream.emit (events.js:166:7)
+354 verbose stack     at endReadableNT (_stream_readable.js:921:12)
+354 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+354 verbose stack     at process._tickCallback (node.js:356:17)
+355 verbose cwd g:\projects\blog.nuullll
+356 error Windows_NT 6.3.9600
+357 error argv "f:\\Program Files\\nodejs\\node.exe" "f:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "hexo-math" "--save"
+358 error node v4.4.7
+359 error npm  v2.15.8
+360 error shasum check failed for C:\Users\Nuullll\AppData\Local\Temp\npm-2020-ec2cb448\registry.npmjs.org\katex\-\katex-0.6.0.tgz
+360 error Expected: 12418e09121c05c92041b6b3b9fb6bab213cb6f3
+360 error Actual:   f17a16f7064fee15b2b8a27a28685adfca742a6a
+360 error From:     https://registry.npmjs.org/katex/-/katex-0.6.0.tgz
+361 error If you need help, you may report this error at:
+361 error     <https://github.com/npm/npm/issues>
+362 verbose exit [ 1, true ]
+363 verbose unbuild node_modules\hexo-math
+364 info preuninstall hexo-math@3.0.2
+365 info uninstall hexo-math@3.0.2
+366 verbose unbuild rmStuff hexo-math@3.0.2 from g:\projects\blog.nuullll\node_modules
+367 info postuninstall hexo-math@3.0.2
+368 silly gentlyRm g:\projects\blog.nuullll\node_modules\hexo-math is being purged from base g:\projects\blog.nuullll
+369 verbose gentlyRm don't care about contents; nuking g:\projects\blog.nuullll\node_modules\hexo-math
+370 silly vacuum-fs purging g:\projects\blog.nuullll\node_modules\hexo-math
+371 silly vacuum-fs quitting because other entries in g:\projects\blog.nuullll\node_modules
