@@ -59,12 +59,12 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   首页: / || battery-empty
-  日常: /daily/ || battery-quarter
+  日常: /categories/日常/ || battery-quarter
   #about: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  魔术: /magic/ || battery-half
-  geek: /geek/ || battery-three-quarters
+  魔术: /categories/魔术/ || battery-half
+  geek: /categories/geek/ || battery-three-quarters
   归档: /archives/ || battery-full
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
