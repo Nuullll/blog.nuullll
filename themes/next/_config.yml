@@ -64,7 +64,8 @@ menu:
   #tags: /tags/ || tags
   #categories: /categories/ || th
   魔术: /magic/ || battery-half
-  归档: /archives/ || battery-three-quarters
+  geek: /geek/ || battery-three-quarters
+  归档: /archives/ || battery-full
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
