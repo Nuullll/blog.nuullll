@@ -112,6 +112,7 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
 
 > 「我觉得一点也不简单QAQ」
 > 「我这里有一个已经搭好的VPS，想不想要？」
+![](/images/ipv6/zhuangbixia.jpg)
 
 ## 基本操作之二：Shadowsocks客户端
 
