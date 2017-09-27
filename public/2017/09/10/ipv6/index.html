@@ -109,7 +109,7 @@
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/structure.png">
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/imhappy.jpg">
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/zhuangbixia.jpg">
-<meta property="og:updated_time" content="2017-09-15T09:17:18.000Z">
+<meta property="og:updated_time" content="2017-09-27T04:01:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么校园网这么贵？">
 <meta name="twitter:description" content="学校在9月份把校园网每月免费20G改成了25G，也取消了超出部分的阶梯计价，统一为2元/G。大家看到免费流量变多了，总是很乐意的。然而对于很多同学而言，尤其是高年级同学，每个月用掉50G+也是司空见惯。（什么？当然是看papaer烧掉的流量呀，不然你以为我们每天在搞什么，滑稽）早知道就去开通个移动宽带了对不对？屁！辣鸡移动网吃鸡都得开加速器。校园网只不过是在守望开团的时候稳定掉包，也只不过是在吃鸡">
@@ -412,7 +412,7 @@
 </ul>
 <p>看完这篇教程后，你就可以搭建出一个<strong><font color="red">全局流量走ipv6</font></strong>的环境，有ipv6的地方，<em>就是江胡</em>。看直播、刷剧、更新软件游戏、<strong>看paper、学习</strong>，统统不在话下。同学们也不同担心速度的问题，有线ipv6环境下，steam依然能以4M/s的速度下载<strong>学习资料</strong>。<del>我不买游戏不会玩游戏根本不知道什么是steam</del><br><img src="/images/ipv6/steam.jpg" alt=""></p>
 <blockquote>
-<p><em>插播一条广告，没想到吧</em><br><img src="/images/ipv6/campnet.png" alt=""><br><strong>万一这篇文章你看不下去了，你还可以用亲室友开发的CampNet管控一下自己的流量，但目前仅支持清华校园网。</strong></p>
+<p><em>插播一条广告，没想到吧</em><br><img src="/images/ipv6/campnet.png" alt=""><br><strong>万一这篇文章你看不下去了，你还可以用亲室友开发的CampNet管控一下自己的流量，但目前仅支持清华校园网。</strong><br>点击<font color="607fa6"><a href="https://mp.weixin.qq.com/s/uvM9zvXqH6rq7AEXjEIB7g" target="_blank" rel="external">阅读原文</a></font>（文风雷同纯属他学我！！！）</p>
 </blockquote>
 <p><strong><font color="red">而我要讲的，只要是支持ipv6的网络就可以！！win mac都支持！！非常高级！！</font></strong></p>
 <h2 id="非基本操作之一：VPS"><a href="#非基本操作之一：VPS" class="headerlink" title="非基本操作之一：VPS"></a>非基本操作之一：VPS</h2><p>VPS的搭建不是基本操作，毕竟还是有一点技术门槛，还要消耗一丢丢人民币。如果你认为自己没功夫去克服技术门槛，或者不想消耗珍贵的人民币，那有以下几种方案可以替代：</p>
@@ -434,7 +434,7 @@
 <p>这样便可以通过IPv6间接地访问到<strong>整个Internet</strong>。当然，可以多用户共享一个vps，降低成本，提高效率。</p>
 <h3 id="租用VPS"><a href="#租用VPS" class="headerlink" title="租用VPS"></a>租用VPS</h3><p>国内外提供VPS的云服务商非常多，<strong>建议大家选择国内的服务商，不仅快速、稳定，最重要的是搭建前后你能访问到Internet的部分<font color="red">完全没有区别</font>，可以说用户体验非常的好。</strong></p>
 <p><img src="/images/ipv6/imhappy.jpg" alt=""></p>
-<p>我选<a href="https://m.do.co/c/3e154132de86" target="_blank" rel="external">DigitalOcean</a>（👈这个是博主DigitalOcean的推广链接，介意的请点<a href="https://www.digitalocean.com" target="_blank" rel="external">这个</a>）。</p>
+<p>说的好，我选<a href="https://m.do.co/c/3e154132de86" target="_blank" rel="external">DigitalOcean</a>（👈这个是博主DigitalOcean的推广链接，介意的请点<a href="https://www.digitalocean.com" target="_blank" rel="external">这个</a>）。</p>
 <p>另外给大家奉上github的<a href="https://education.github.com/pack" target="_blank" rel="external">education pack</a>，里面有更多DigitalOcean优惠。</p>
 <p>接下来可以创建你的云服务器了，DigitalOcean把其称之为Droplet，创建Droplet及如何远程登录到服务器请移步<a href="https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet" target="_blank" rel="external">官方新手教程</a>，其他平台类似。<strong>记得勾选<font color="red">Enable IPv6</font>选项</strong></p>
 <h3 id="部署Shadowsocks-server"><a href="#部署Shadowsocks-server" class="headerlink" title="部署Shadowsocks server"></a>部署Shadowsocks server</h3><p>登录至你的服务器后，就可以安装Shadowsocks server了。</p>
@@ -455,13 +455,16 @@
 <li><p>编写配置文件，保存在服务器上</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"server"</span>:<span class="string">"ipv6_address_of_your_server"</span>,</div><div class="line">    <span class="attr">"timeout"</span>:<span class="number">600</span>,</div><div class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line">    <span class="attr">"server_port"</span>:<span class="number">60001</span>,</div><div class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</div><div class="line">    <span class="attr">"password"</span>:<span class="string">"your_password"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>比如将上述文件保存为<code>/etc/shadowsocks-ipv6.conf</code></p>
+<li><p>感谢 @ClumsyLee 大佬指点，<font color="red">更推荐同时监听ipv4和ipv6</font>，配置如下（请确保你所安装的shadowsocks是通过pip/pip3安装的，而不是shadowsocks-libev。否则同时监听v4和v6的配置写法略有不同）：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"server"</span>:<span class="string">"::"</span>,</div><div class="line">    <span class="attr">"timeout"</span>:<span class="number">600</span>,</div><div class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line">    <span class="attr">"server_port"</span>:<span class="number">46001</span>,</div><div class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</div><div class="line">    <span class="attr">"password"</span>:<span class="string">"your_password"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>当然，你可能还需要打开防火墙的相关端口（以60001端口为例）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ufw allow 60001</div></pre></td></tr></table></figure>
+<li><p>比如将上述文件保存为<code>/etc/shadowsocks.conf</code></p>
+</li>
+<li><p>当然，你可能还需要打开防火墙的相关端口（以46001端口为例）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ufw allow 46001</div></pre></td></tr></table></figure>
 </li>
 <li><p>运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssserver -c /etc/shadowsocks-ipv6.conf</div><div class="line"># 或者后台运行</div><div class="line">nohup ssserver -c /etc/shadowsocks-ipv6.conf &amp;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ssserver -c /etc/shadowsocks.conf</div><div class="line"># 或者后台运行（感谢 @ClumsyLee 大佬指点）</div><div class="line">sudo ssserver -c /etc/shadowsocks.conf -d start --user nobody</div><div class="line"># 以及更新/etc/rc.local实现开机自动启动</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>ssserver即可正常工作了。</p>

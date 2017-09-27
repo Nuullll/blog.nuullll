@@ -29,6 +29,7 @@ categories:
 > *插播一条广告，没想到吧*
 > ![](/images/ipv6/campnet.png)
 > **万一这篇文章你看不下去了，你还可以用亲室友开发的CampNet管控一下自己的流量，但目前仅支持清华校园网。**
+> 点击<font color=607fa6>[阅读原文](https://mp.weixin.qq.com/s/uvM9zvXqH6rq7AEXjEIB7g)</font>（文风雷同纯属他学我！！！）
 
 **<font color=red>而我要讲的，只要是支持ipv6的网络就可以！！win mac都支持！！非常高级！！</font>**
 
@@ -59,7 +60,7 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
 
 ![](/images/ipv6/imhappy.jpg)
 
-我选[DigitalOcean](https://m.do.co/c/3e154132de86)（👈这个是博主DigitalOcean的推广链接，介意的请点[这个](https://www.digitalocean.com)）。
+说的好，我选[DigitalOcean](https://m.do.co/c/3e154132de86)（👈这个是博主DigitalOcean的推广链接，介意的请点[这个](https://www.digitalocean.com)）。
 
 另外给大家奉上github的[education pack](https://education.github.com/pack)，里面有更多DigitalOcean优惠。
 
@@ -95,16 +96,28 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
       "password":"your_password"
   }
   ```
-  * 比如将上述文件保存为`/etc/shadowsocks-ipv6.conf`
-  * 当然，你可能还需要打开防火墙的相关端口（以60001端口为例）
+  * 感谢 @ClumsyLee 大佬指点，<font color=red>更推荐同时监听ipv4和ipv6</font>，配置如下（请确保你所安装的shadowsocks是通过pip/pip3安装的，而不是shadowsocks-libev。否则同时监听v4和v6的配置写法略有不同）：
+  ```json
+  {
+      "server":"::",
+      "timeout":600,
+      "method":"aes-256-cfb",
+      "server_port":46001,
+      "local_port":1080,
+      "password":"your_password"
+  }
   ```
-  ufw allow 60001
+  * 比如将上述文件保存为`/etc/shadowsocks.conf`
+  * 当然，你可能还需要打开防火墙的相关端口（以46001端口为例）
+  ```
+  ufw allow 46001
   ```
   * 运行
   ```
-  ssserver -c /etc/shadowsocks-ipv6.conf
-  # 或者后台运行
-  nohup ssserver -c /etc/shadowsocks-ipv6.conf &
+  ssserver -c /etc/shadowsocks.conf
+  # 或者后台运行（感谢 @ClumsyLee 大佬指点）
+  sudo ssserver -c /etc/shadowsocks.conf -d start --user nobody
+  # 以及更新/etc/rc.local实现开机自动启动
   ```
   ssserver即可正常工作了。
 
