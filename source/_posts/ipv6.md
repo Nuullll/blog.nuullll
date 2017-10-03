@@ -12,7 +12,7 @@ categories:
 
 学校在9月份把校园网每月**免费20G**改成了**25G**，也取消了超出部分的阶梯计价，统一为**2元/G**。大家看到免费流量变多了，总是很乐意的。然而对于很多同学而言，*尤其是高年级同学*，每个月用掉**50G+**也是司空见惯。<del>（什么？当然是看papaer烧掉的流量呀，不然你以为我们每天在搞什么，滑稽）</del>早知道就去开通个移动宽带了对不对？屁！辣鸡移动网吃鸡都得开加速器。校园网只不过是在守望开团的时候*稳定*掉包，也只不过是在吃鸡决赛圈突然瞬移骑脸给对手身心双重打击，**丝毫不影响游戏体验**。
 
-不过我不是来给教育网写软文的，我要告诉大家如何通过一些**基本操作**实现**全局ipv6**，获得流量和钱包的**大和谐**。*（强行写在摘要里让你们看到，别走！别走！*<!-- more -->
+不过我不是来给教育网写软文的，我要告诉大家如何通过一些**基本操作**实现**全局ipv6**，<font color=red>获得流量和钱包的**生命大和谐**</font>。*（强行写在摘要里让你们看到，别走！别走！*<!-- more -->
 
 首先，你需要一个<del>女朋友</del>有ipv6的网络环境，教育网基本都有。另外，你还需要：
 * 服务器端 
@@ -23,12 +23,13 @@ categories:
   * app: shadowsocks client
   * app: proxycap
 
-看完这篇教程后，你就可以搭建出一个**<font color=red>全局流量走ipv6</font>**的环境，有ipv6的地方，*就是江胡*。看直播、刷剧、更新软件游戏、**看paper、学习**，统统不在话下。同学们也不同担心速度的问题，有线ipv6环境下，steam依然能以4M/s的速度下载**学习资料**。<del>我不买游戏不会玩游戏根本不知道什么是steam</del>
+看完这篇教程后，你就可以搭建出一个**<font color=red>全局流量走ipv6</font>**的环境，有ipv6的地方，就是江湖。看直播、刷剧、更新软件游戏、**看paper、学习**，统统不在话下。同学们也不同担心速度的问题，有线ipv6环境下，steam依然能以4M/s的速度下载**学习资料**。<del>我不买游戏不会玩游戏根本不知道什么是steam</del>
 ![](/images/ipv6/steam.jpg)
+<img src="/images/ipv6/research.jpeg" alt="" style="width: 300px;">
 
 > *插播一条广告，没想到吧*
 > ![](/images/ipv6/campnet.png)
-> **万一这篇文章你看不下去了，你还可以用亲室友开发的CampNet管控一下自己的流量，但目前仅支持清华校园网。**
+> **万一这篇文章你看不下去了，你还可以用亲室友 @ClumsyLee 开发的CampNet管控一下自己的流量，但目前仅支持清华校园网。**
 > 点击<font color=607fa6>[阅读原文](https://mp.weixin.qq.com/s/uvM9zvXqH6rq7AEXjEIB7g)</font>（文风雷同纯属他学我！！！）
 
 **<font color=red>而我要讲的，只要是支持ipv6的网络就可以！！win mac都支持！！非常高级！！</font>**
@@ -96,7 +97,7 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
       "password":"your_password"
   }
   ```
-  * 感谢 @ClumsyLee 大佬指点，<font color=red>更推荐同时监听ipv4和ipv6</font>，配置如下（请确保你所安装的shadowsocks是通过pip/pip3安装的，而不是shadowsocks-libev。否则同时监听v4和v6的配置写法略有不同）：
+  * 感谢 @ClumsyLee 大佬指点，<font color=red>更推荐同时监听ipv4和ipv6</font>，配置如下（请确保你所安装的是通过pip/pip3安装的shadowsocks，而不是shadowsocks-libev。否则同时监听v4和v6的配置写法略有不同）：
   ```json
   {
       "server":"::",
@@ -129,4 +130,15 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
 
 ## 基本操作之二：Shadowsocks客户端
 
+如果你已经成功通过<del>撒娇打滚卖萌</del>技术手段拿到了服务器端的shadowsocks配置方案，恭喜你离生命的大和谐只有两步之遥啦。
+
+接下来需要在你的客户端上安装Shadowsocks client，以连接到VPS上的Shadowsocks server。
+
+### 安装Shadowsocks
+
+* Windows
+  * 请先**想办法**下载Shadowsocks.exe
+
 鸽你不是两三天。
+
+<font color=red>⬇️livere的评论系统挂了⬇️，想评论先忍着。</font>
