@@ -5,7 +5,7 @@ tags:
   - vps
   - shadowsocks
   - ipv6
-  - proxycap
+  - proxifier
 categories:
   - geek
 ---
@@ -21,7 +21,7 @@ categories:
 * 客户端
   * 操作系统：Win/MacOS 
   * app: shadowsocks client
-  * app: proxycap
+  * app: proxifier
 
 看完这篇教程后，你就可以搭建出一个**<font color=red>全局流量走ipv6</font>**的环境，有ipv6的地方，就是江湖。看直播、刷剧、更新软件游戏、**看paper、学习**，统统不在话下。同学们也不同担心速度的问题，有线ipv6环境下，steam依然能以4M/s的速度下载**学习资料**。<del>我不买游戏不会玩游戏根本不知道什么是steam</del>
 ![](/images/ipv6/steam.jpg)
@@ -121,6 +121,7 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
   # 以及更新/etc/rc.local实现开机自动启动
   ```
   ssserver即可正常工作了。
+  * *以上配置中`server_port`，`password`等参数是完全可以自由配置的。*
 
 **服务器端的配置就基本完成了，还是很简单的。**
 
@@ -134,10 +135,48 @@ Virtual Private Server，说白了就是租用的一台为你提供服务的机�
 
 接下来需要在你的客户端上安装Shadowsocks client，以连接到VPS上的Shadowsocks server。
 
-### 安装Shadowsocks
+### 安装并配置Shadowsocks client
+* 安装Shadowsocks
+  * Windows
+    请**想办法**下载[Shadowsocks.exe](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.0.6/Shadowsocks-4.0.6.zip)（*没错你需要特别的打开方式*
+  * MacOS
+    下载安装[ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.6.1/ShadowsocksX-NG.1.6.1.zip)
+* 运行Shadowsocks
+* 服务器->编辑服务器->添加
+* 将你的ss服务端相应配置填入
+![](/images/ipv6/ss-win.jpeg)
+  * 服务器IP请填写**服务器的ipv6地址**；
+  * 服务器端口对应上文配置中的`server_port`；
+  * 密码对应上文配置中的`password`；
+  * 代理端口保持默认`1080`即可，如果你理解它的含义当然也可以自定义；
+  * 其他选项可以保持默认，新版本的Shadowsocks可能还会有插件选项，这里不需要设置。
 
-* Windows
-  * 请先**想办法**下载Shadowsocks.exe
+### 测试配置可用性
+
+如果配置正确的话，那么你的**浏览器**以及一些可以设置**SOCKS 5**代理的应用应该已经可以顺利与Shadowsocks对接了。
+
+这意味着你可以让浏览器走ipv6流量了。
+
+本质上Shadowsocks是一个帮助科学上网的软件，所以如果Shadowsocks设置为**自动代理模式**，那么它会在访问一些无法正常访问的网站（如[Google](https://www.google.com)）时走你所设置的代理服务器，而访问<del>局域网内</del>正常网站（如[Baidu](https://www.baidu.com)）时则是直接连接，不通过代理服务器。
+
+* 所以当Shadowsocks为自动代理模式时，
+  * 你租用的vps是国外节点，你将可以走ipv6流量连接至代理服务器，进而成功访问[Google](https://www.google.com)等网站；
+  * 你租用的vps是国内节点，将没有任何变化。
+* 而当Shadowsocks为全局模式时，
+  * 你租用的vps是国外节点，理论上你可以访问到任何你想访问的网站，而且所有流量是ipv6的形式。因此即使你不登录校园网账号，依然可以通过浏览器正常上网。**但是，对于一些视频网站，你将会受到地域版权限制，因为你是以国外ip的身份访问它们的**，不过[斗鱼](https://www.douyu.com)等直播网站倒是没有限制地域；
+  * 你租用的vps是国内节点，你依然无法访问[Google](https://www.google.com)等网站，但是访问其他网站均是以ipv6的形式，可以随心所欲畅游各大视频网站，而校园网不会收取你任何费用。
+
+所以，我推荐大家选国内vps**也不是毫无道理的**，看大家各自的需求是什么咯。
+
+## 基本操作之三：Proxifier
+
+我相信将Shadowsocks设为全局模式，ipv6下使用浏览器已经可以满足相当一部分同学的需求。但是，很多时候其他软件或进程也非常烧流量，比如windows的系统更新、百度云网盘<del>以及Steam、Battle.net</del>等。这些程序通常不支持代理或者不支持SOCKS 5的代理，没关系，我们可以通过**代理的转发**强行让所有程序都走ipv6。
+
+只需要另一个软件：Proxifier，在windows和MacOS平台都有。
+
+Proxifier的基本思路是**把本地所有网络流量通过可配置的规则按情况转发到对应的端口**。首先明确，我们的Shadowsocks只监听本地（`localhost`或`127.0.0.1`）的1080端口（默认设置），而且代理的类型是SOCKS 5（不是HTTP，也不是SOCKS 4）。现在我们就要把所有流量都转发到`127.0.0.1:1080`上，以实现真正的全局ipv6。
+
+### 下载安装Proxifier
 
 鸽你不是两三天。
 

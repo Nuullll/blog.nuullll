@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="vps,shadowsocks,ipv6,proxycap," />
+  <meta name="keywords" content="vps,shadowsocks,ipv6,proxifier," />
 
 
 
@@ -96,7 +96,7 @@
 
 
 <meta name="description" content="学校在9月份把校园网每月免费20G改成了25G，也取消了超出部分的阶梯计价，统一为2元/G。大家看到免费流量变多了，总是很乐意的。然而对于很多同学而言，尤其是高年级同学，每个月用掉50G+也是司空见惯。（什么？当然是看papaer烧掉的流量呀，不然你以为我们每天在搞什么，滑稽）早知道就去开通个移动宽带了对不对？屁！辣鸡移动网吃鸡都得开加速器。校园网只不过是在守望开团的时候稳定掉包，也只不过是在吃鸡">
-<meta name="keywords" content="vps,shadowsocks,ipv6,proxycap">
+<meta name="keywords" content="vps,shadowsocks,ipv6,proxifier">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为什么校园网这么贵？">
 <meta property="og:url" content="http://blog.nuullll.com/2017/09/10/ipv6/index.html">
@@ -110,7 +110,8 @@
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/structure.png">
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/imhappy.jpg">
 <meta property="og:image" content="http://blog.nuullll.com/images/ipv6/zhuangbixia.jpg">
-<meta property="og:updated_time" content="2017-10-04T02:47:25.000Z">
+<meta property="og:image" content="http://blog.nuullll.com/images/ipv6/ss-win.jpeg">
+<meta property="og:updated_time" content="2017-10-22T04:04:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为什么校园网这么贵？">
 <meta name="twitter:description" content="学校在9月份把校园网每月免费20G改成了25G，也取消了超出部分的阶梯计价，统一为2元/G。大家看到免费流量变多了，总是很乐意的。然而对于很多同学而言，尤其是高年级同学，每个月用掉50G+也是司空见惯。（什么？当然是看papaer烧掉的流量呀，不然你以为我们每天在搞什么，滑稽）早知道就去开通个移动宽带了对不对？屁！辣鸡移动网吃鸡都得开加速器。校园网只不过是在守望开团的时候稳定掉包，也只不过是在吃鸡">
@@ -407,7 +408,7 @@
 <li>客户端<ul>
 <li>操作系统：Win/MacOS </li>
 <li>app: shadowsocks client</li>
-<li>app: proxycap</li>
+<li>app: proxifier</li>
 </ul>
 </li>
 </ul>
@@ -469,6 +470,9 @@
 </li>
 </ul>
 <p>ssserver即可正常工作了。</p>
+<ul>
+<li><em>以上配置中<code>server_port</code>，<code>password</code>等参数是完全可以自由配置的。</em></li>
+</ul>
 </li>
 </ul>
 <p><strong>服务器端的配置就基本完成了，还是很简单的。</strong></p>
@@ -477,13 +481,43 @@
 </blockquote>
 <h2 id="基本操作之二：Shadowsocks客户端"><a href="#基本操作之二：Shadowsocks客户端" class="headerlink" title="基本操作之二：Shadowsocks客户端"></a>基本操作之二：Shadowsocks客户端</h2><p>如果你已经成功通过<del>撒娇打滚卖萌</del>技术手段拿到了服务器端的shadowsocks配置方案，恭喜你离生命的大和谐只有两步之遥啦。</p>
 <p>接下来需要在你的客户端上安装Shadowsocks client，以连接到VPS上的Shadowsocks server。</p>
-<h3 id="安装Shadowsocks"><a href="#安装Shadowsocks" class="headerlink" title="安装Shadowsocks"></a>安装Shadowsocks</h3><ul>
-<li>Windows<ul>
-<li>请先<strong>想办法</strong>下载Shadowsocks.exe</li>
+<h3 id="安装并配置Shadowsocks-client"><a href="#安装并配置Shadowsocks-client" class="headerlink" title="安装并配置Shadowsocks client"></a>安装并配置Shadowsocks client</h3><ul>
+<li>安装Shadowsocks<ul>
+<li>Windows<br>请<strong>想办法</strong>下载<a href="https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.0.6/Shadowsocks-4.0.6.zip" target="_blank" rel="external">Shadowsocks.exe</a>（<em>没错你需要特别的打开方式</em></li>
+<li>MacOS<br>下载安装<a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.6.1/ShadowsocksX-NG.1.6.1.zip" target="_blank" rel="external">ShadowsocksX-NG</a></li>
+</ul>
+</li>
+<li>运行Shadowsocks</li>
+<li>服务器-&gt;编辑服务器-&gt;添加</li>
+<li>将你的ss服务端相应配置填入<br><img src="/images/ipv6/ss-win.jpeg" alt=""><ul>
+<li>服务器IP请填写<strong>服务器的ipv6地址</strong>；</li>
+<li>服务器端口对应上文配置中的<code>server_port</code>；</li>
+<li>密码对应上文配置中的<code>password</code>；</li>
+<li>代理端口保持默认<code>1080</code>即可，如果你理解它的含义当然也可以自定义；</li>
+<li>其他选项可以保持默认，新版本的Shadowsocks可能还会有插件选项，这里不需要设置。</li>
 </ul>
 </li>
 </ul>
-<p>鸽你不是两三天。</p>
+<h3 id="测试配置可用性"><a href="#测试配置可用性" class="headerlink" title="测试配置可用性"></a>测试配置可用性</h3><p>如果配置正确的话，那么你的<strong>浏览器</strong>以及一些可以设置<strong>SOCKS 5</strong>代理的应用应该已经可以顺利与Shadowsocks对接了。</p>
+<p>这意味着你可以让浏览器走ipv6流量了。</p>
+<p>本质上Shadowsocks是一个帮助科学上网的软件，所以如果Shadowsocks设置为<strong>自动代理模式</strong>，那么它会在访问一些无法正常访问的网站（如<a href="https://www.google.com" target="_blank" rel="external">Google</a>）时走你所设置的代理服务器，而访问<del>局域网内</del>正常网站（如<a href="https://www.baidu.com" target="_blank" rel="external">Baidu</a>）时则是直接连接，不通过代理服务器。</p>
+<ul>
+<li>所以当Shadowsocks为自动代理模式时，<ul>
+<li>你租用的vps是国外节点，你将可以走ipv6流量连接至代理服务器，进而成功访问<a href="https://www.google.com" target="_blank" rel="external">Google</a>等网站；</li>
+<li>你租用的vps是国内节点，将没有任何变化。</li>
+</ul>
+</li>
+<li>而当Shadowsocks为全局模式时，<ul>
+<li>你租用的vps是国外节点，理论上你可以访问到任何你想访问的网站，而且所有流量是ipv6的形式。因此即使你不登录校园网账号，依然可以通过浏览器正常上网。<strong>但是，对于一些视频网站，你将会受到地域版权限制，因为你是以国外ip的身份访问它们的</strong>，不过<a href="https://www.douyu.com" target="_blank" rel="external">斗鱼</a>等直播网站倒是没有限制地域；</li>
+<li>你租用的vps是国内节点，你依然无法访问<a href="https://www.google.com" target="_blank" rel="external">Google</a>等网站，但是访问其他网站均是以ipv6的形式，可以随心所欲畅游各大视频网站，而校园网不会收取你任何费用。</li>
+</ul>
+</li>
+</ul>
+<p>所以，我推荐大家选国内vps<strong>也不是毫无道理的</strong>，看大家各自的需求是什么咯。</p>
+<h2 id="基本操作之三：Proxifier"><a href="#基本操作之三：Proxifier" class="headerlink" title="基本操作之三：Proxifier"></a>基本操作之三：Proxifier</h2><p>我相信将Shadowsocks设为全局模式，ipv6下使用浏览器已经可以满足相当一部分同学的需求。但是，很多时候其他软件或进程也非常烧流量，比如windows的系统更新、百度云网盘<del>以及Steam、Battle.net</del>等。这些程序通常不支持代理或者不支持SOCKS 5的代理，没关系，我们可以通过<strong>代理的转发</strong>强行让所有程序都走ipv6。</p>
+<p>只需要另一个软件：Proxifier，在windows和MacOS平台都有。</p>
+<p>Proxifier的基本思路是<strong>把本地所有网络流量通过可配置的规则按情况转发到对应的端口</strong>。首先明确，我们的Shadowsocks只监听本地（<code>localhost</code>或<code>127.0.0.1</code>）的1080端口（默认设置），而且代理的类型是SOCKS 5（不是HTTP，也不是SOCKS 4）。现在我们就要把所有流量都转发到<code>127.0.0.1:1080</code>上，以实现真正的全局ipv6。</p>
+<h3 id="下载安装Proxifier"><a href="#下载安装Proxifier" class="headerlink" title="下载安装Proxifier"></a>下载安装Proxifier</h3><p>鸽你不是两三天。</p>
 
       
     </div>
@@ -507,7 +541,7 @@
           
             <a href="/tags/ipv6/" rel="tag"># ipv6</a>
           
-            <a href="/tags/proxycap/" rel="tag"># proxycap</a>
+            <a href="/tags/proxifier/" rel="tag"># proxifier</a>
           
         </div>
       
@@ -636,7 +670,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -691,7 +725,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#非基本操作之一：VPS"><span class="nav-number">1.</span> <span class="nav-text">非基本操作之一：VPS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是VPS？"><span class="nav-number">1.1.</span> <span class="nav-text">什么是VPS？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#租用VPS"><span class="nav-number">1.2.</span> <span class="nav-text">租用VPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Shadowsocks-server"><span class="nav-number">1.3.</span> <span class="nav-text">部署Shadowsocks server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本操作之二：Shadowsocks客户端"><span class="nav-number">2.</span> <span class="nav-text">基本操作之二：Shadowsocks客户端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Shadowsocks"><span class="nav-number">2.1.</span> <span class="nav-text">安装Shadowsocks</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#非基本操作之一：VPS"><span class="nav-number">1.</span> <span class="nav-text">非基本操作之一：VPS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是VPS？"><span class="nav-number">1.1.</span> <span class="nav-text">什么是VPS？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#租用VPS"><span class="nav-number">1.2.</span> <span class="nav-text">租用VPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Shadowsocks-server"><span class="nav-number">1.3.</span> <span class="nav-text">部署Shadowsocks server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本操作之二：Shadowsocks客户端"><span class="nav-number">2.</span> <span class="nav-text">基本操作之二：Shadowsocks客户端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装并配置Shadowsocks-client"><span class="nav-number">2.1.</span> <span class="nav-text">安装并配置Shadowsocks client</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试配置可用性"><span class="nav-number">2.2.</span> <span class="nav-text">测试配置可用性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本操作之三：Proxifier"><span class="nav-number">3.</span> <span class="nav-text">基本操作之三：Proxifier</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装Proxifier"><span class="nav-number">3.1.</span> <span class="nav-text">下载安装Proxifier</span></a></li></ol></li></ol></div>
             
 
           </div>
