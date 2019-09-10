@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Nuullll, hexo, shadowsocks, magic, ipv6" />
+  <meta name="keywords" content="codeforces,C," />
 
 
 
@@ -95,16 +95,18 @@
 
 
 
-<meta name="description" content="404 NOT FOUND">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nuullll">
-<meta property="og:url" content="http://blog.nuullll.com/page/2/index.html">
+<meta name="description" content="原题 思路 二进制长度与数值大小的关系问题。">
+<meta name="keywords" content="codeforces,C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Codeforces 1217.C] The Number Of Good Substrings">
+<meta property="og:url" content="http://blog.nuullll.com/2019/09/10/CF-1217-C/index.html">
 <meta property="og:site_name" content="Nuullll">
-<meta property="og:description" content="404 NOT FOUND">
+<meta property="og:description" content="原题 思路 二进制长度与数值大小的关系问题。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-10T15:02:47.188Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nuullll">
-<meta name="twitter:description" content="404 NOT FOUND">
+<meta name="twitter:title" content="[Codeforces 1217.C] The Number Of Good Substrings">
+<meta name="twitter:description" content="原题 思路 二进制长度与数值大小的关系问题。">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.nuullll.com/page/2/"/>
+  <link rel="canonical" href="http://blog.nuullll.com/2019/09/10/CF-1217-C/"/>
 
 
 
 
 
-  <title>Nuullll</title>
+  <title>[Codeforces 1217.C] The Number Of Good Substrings | Nuullll</title>
   
 
 
@@ -178,8 +180,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -282,9 +283,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -297,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.nuullll.com/2017/09/10/ipv6/">
+    <link itemprop="mainEntityOfPage" href="http://blog.nuullll.com/2019/09/10/CF-1217-C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nuullll">
@@ -314,9 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/10/ipv6/" itemprop="url">为什么校园网这么贵？</a></h1>
+          <h1 class="post-title" itemprop="name headline">[Codeforces 1217.C] The Number Of Good Substrings</h1>
         
 
         <div class="post-meta">
@@ -328,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T13:04:19+08:00">
-                2017-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T22:41:33+08:00">
+                2019-09-10
               </time>
             
 
@@ -388,17 +387,28 @@
       
 
       
-        
-          <p>学校在9月份把校园网每月<strong>免费20G</strong>改成了<strong>25G</strong>，也取消了超出部分的阶梯计价，统一为<strong>2元/G</strong>。大家看到免费流量变多了，总是很乐意的。然而对于很多同学而言，<em>尤其是高年级同学</em>，每个月用掉<strong>50G+</strong>也是司空见惯。<del>（什么？当然是看papaer烧掉的流量呀，不然你以为我们每天在搞什么，滑稽）</del>早知道就去开通个移动宽带了对不对？屁！辣鸡移动网吃鸡都得开加速器。校园网只不过是在守望开团的时候<em>稳定</em>掉包，也只不过是在吃鸡决赛圈突然瞬移骑脸给对手身心双重打击，<strong>丝毫不影响游戏体验</strong>。</p>
-<p>不过我不是来给教育网写软文的，我要告诉大家如何通过一些<strong>基本操作</strong>实现<strong>全局ipv6</strong>，<font color="red">获得流量和钱包的<strong>生命大和谐</strong></font>。<em>（强行写在摘要里让你们看到，别走！别走！</em>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/10/ipv6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p><a href="https://codeforces.com/contest/1217/problem/C" target="_blank" rel="external">原题</a></p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ol>
+<li>二进制长度与数值大小的关系问题。<a id="more"></a><ol>
+<li>考虑给一个二进制数增加一个MSB (Most Significant Bit)，显然数值增长的速度（接近指数）远超过长度增长的速度（线性）。</li>
+<li>所以一个good string，高位必然有大量连续的0，来弥补长度的损失。例如长度为8，表示8的二进制数：<code>0b0000_1000</code>。可以以此为切入点。</li>
+</ol>
+</li>
+<li>考虑暴力的方式。不加优化，遍历每个子串是否符合要求的时间复杂度为$O(n^2)$，对于$10^5$量级的数据显然过大。<ol>
+<li>字符串中连续0的个数象征着对长度的弥补能力。</li>
+<li>考虑以<code>s[i]</code>结尾的子串：<ol>
+<li>如果<code>s[i] == &#39;1&#39;</code>，那么<code>&quot;1&quot;</code>即是一个好子串；反之，<code>&quot;0&quot;</code>则不是。</li>
+<li>我们关心字符串中的<code>&#39;1&#39;</code>，因为只有<code>&#39;1&#39;</code>对数值的增长有贡献，然后我们再通过连续<code>&#39;0&#39;</code>的数量判断是否足以将长度补偿至好子串。</li>
+<li>可以用增量的思路去想，每次去找下一个左边的<code>&#39;1&#39;</code>，同时考虑中间连续<code>&#39;0&#39;</code>的个数，再结合简单的位运算，即可找出所有以<code>s[i]</code>结尾的好子串。</li>
+<li>如果离线计算各位置连续<code>&#39;0&#39;</code>的数量，那么计算<code>s[i]</code>结尾的好子串数量最差只需要$O(\log n)$的复杂度（此时整个数组的长度都不足以补偿数值的增长了）。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>故优化后的暴力搜索只需要$O(n\log n)$的时间复杂度。</li>
+</ol>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * https://codeforces.com/problemset/problem/1217/C</span></div><div class="line"><span class="comment"> * C. The Number Of Good Substrings</span></div><div class="line"><span class="comment"> */</span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * Solution goes here.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">log2</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (x &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="number">1</span> + log2(x&gt;&gt;<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">numberOfGoodSubstrings</span><span class="params">(<span class="built_in">string</span>&amp; s)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n = s.size();</div><div class="line"></div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; contZeros(n+<span class="number">1</span>);</div><div class="line"></div><div class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</div><div class="line">        <span class="keyword">if</span> (s[i] == <span class="string">'0'</span>) ++count;</div><div class="line">        <span class="keyword">else</span> count = <span class="number">0</span>;</div><div class="line"></div><div class="line">        contZeros[i+<span class="number">1</span>] = count;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">// consider the number of good substrings end at index i</span></div><div class="line">    <span class="keyword">int</span> res = s[<span class="number">0</span>] == <span class="string">'1'</span> ? <span class="number">1</span> : <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;</div><div class="line">        <span class="keyword">int</span> max_len = i + <span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> left_flag = max(<span class="number">0</span>, i - log2(max_len));</div><div class="line"></div><div class="line">        <span class="keyword">int</span> j = i;</div><div class="line">        <span class="keyword">int</span> x = <span class="number">0</span>;</div><div class="line">        <span class="keyword">while</span> (j &gt;= left_flag) &#123;</div><div class="line">            <span class="keyword">if</span> (s[j] == <span class="string">'1'</span>) &#123;</div><div class="line">                x += <span class="number">1</span>&lt;&lt;(i-j);</div><div class="line">                <span class="keyword">if</span> (x &gt; max_len) <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">if</span> (contZeros[j] &gt;= x-(i-j+<span class="number">1</span>)) ++res;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            j -= contZeros[j] + <span class="number">1</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> res;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -413,302 +423,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.nuullll.com/2016/08/11/fixed-card/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Nuullll">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/spade-invert.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nuullll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/08/11/fixed-card/" itemprop="url">牌堆「不动点」</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-11T15:50:29+08:00">
-                2016-08-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/魔术/" itemprop="url" rel="index">
-                    <span itemprop="name">魔术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/codeforces/" rel="tag"># codeforces</a>
           
-
+            <a href="/tags/C/" rel="tag"># C</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>这个魔术受启发于我的室友@Rachel<a href="#footnote-rachel"><sup> [1]</sup></a> 某天晚上给我表演的一个纸牌魔术，后来我们发现这魔术背后的数学原理可以进一步推广，于是我们两人花了一晚上<del> py </del>推导出了通用公式，并想出了对应的流程。为了让读者<del>（好吧其实没什么读者）</del>没那么乏味，我先描述一下魔术的最终效果。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/08/11/fixed-card/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/10/CF-854-C/" rel="next" title="[Codeforces 854.C] Planning">
+                <i class="fa fa-chevron-left"></i> [Codeforces 854.C] Planning
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.nuullll.com/2015/06/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Nuullll">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/spade-invert.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nuullll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/06/05/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-05T18:38:17+08:00">
-                2015-06-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日常/" itemprop="url" rel="index">
-                    <span itemprop="name">日常</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Hello Nuullll. Hello my world.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -718,14 +464,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -733,6 +476,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDc3My83MzI1"></div>
+    
+  </div>
+
 
         </div>
         
@@ -753,8 +502,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -839,6 +597,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">2.</span> <span class="nav-text">Code</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -959,6 +733,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
 
   
 
@@ -987,6 +765,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
