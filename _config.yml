@@ -77,3 +77,20 @@ avatar: /images/spade-invert.png
 # Analytics
 google_analytics: UA-63795277-1
 baidu_anaylytics: d4e32cdca9ebf5bcb2e1b81ce2c5b050
+
+# hexo-sage-posts
+sage_posts:
+  filter: hidden    # Change the filter name to fit your need
+
+# hexo-math
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
+    src: custom_mathjax_source
+    config:
+      # MathJax config
+  katex:
+    css: custom_css_source
+    js: custom_js_source # not used
+    config:
+      # KaTeX config
